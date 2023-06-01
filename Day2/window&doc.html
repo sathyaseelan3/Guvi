@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Difference between Window and Document</title>
+  <style>
+    body { background-color: black;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    
+    h1 {
+      color:red;
+    }
+    h2 {
+      color:yellow;
+
+    }
+
+    p {
+      line-height: 1.6;
+      color: white;
+    }
+    b{
+        color:orange;
+    }
+  </style>
+</head>
+<body>
+  <h1>Difference between Window and Document</h1>
+  
+  <h2>Browser Object Model (BOM)</h2>
+  <p>The Browser Object Model contains objects that represent the current browser window or tab. 
+     The topmost object in the BOM is the window object representing the window or tab or an iframe sometimes.
+     Window object has properties like browser history, location and the device’s screen etc.
+     In case of multi tab browser, a window object represents a single tab, but some of its properties like innerHeight, innerWidth and methods like resizeTo() will affect the whole browser window.
+    </p>
+  
+  <h2>Document Object Model</h2>
+  <p>When a web page is loaded, the browser creates a Document Object Model of the page. 
+     The document object represents the whole html document as a tree of Objects(HTML, HEAD, BODY, and other HTML tags). 
+     It is the root element that represents the html document.
+  </p>
+  
+  <h2>Window Vs Document</h2>
+  <p><b> Window object :</b><p> 
+    <p>It is the top most object and outermost element of the object hierarchy as shown</p>
+
+  <p><b>Document object :</b></p> 
+  <p>Each HTML document that gets loaded into a window becomes a document object. 
+     The document contains the contents of the page. 
+     Using document object, JavaScript can modify, add and delete the HTML elements, attributes CSS styles in the page
+    </p>
+    <p> The window object represents a window/tab containing a DOM document where as document object is property of window object that points to the DOM document loaded in that window.
+        You can access a document object either using window.document property or using document object directly as window is global object. In the below example, title is the property of document object.
+        The other major difference is that both window object and document object have properties and methods. Few method names are same in both objects but with different behavior. In the below example window.open() opens a new tab or window and document.open() creates a blank document within the window.
+    </p>
+
+</body>
+
+</html>
