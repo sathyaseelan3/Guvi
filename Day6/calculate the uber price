@@ -1,0 +1,20 @@
+class UberPriceCalculator {
+  constructor(baseFare, costPerKm) {
+    this.baseFare = baseFare;
+    this.costPerKm = costPerKm;
+  }
+
+  calculatePrice(distanceInKm) {
+    const totalPrice = this.baseFare + this.costPerKm * distanceInKm;
+    return totalPrice;
+  }
+}
+
+
+const calculator = new UberPriceCalculator(5, 2.5);
+
+
+const distance = 10;
+const price = calculator.calculatePrice(distance);
+
+console.log(`The price for a ${distance} km ride is $${price}`);

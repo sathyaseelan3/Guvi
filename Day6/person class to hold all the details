@@ -1,0 +1,28 @@
+class Person {
+  constructor(name, age, email, address) {
+    this.name = name;
+    this.age = age;
+    this.email = email;
+    this.address = address;
+  }
+
+  introduce() {
+    console.log(`Hi, my name is ${this.name}. I am ${this.age} years old.`);
+  }
+
+  changeAddress(newAddress) {
+    this.address = newAddress;
+    console.log(`My address has been updated to ${this.address}.`);
+  }
+}
+
+
+const person = new Person("John Doe", 30, "johndoe@example.com", "123 Main St, New York, USA");
+
+
+console.log(person.name);   
+person.age = 35;
+console.log(person.age);     
+
+person.introduce();          
+person.changeAddress("456 Park Ave, Chicago, USA"); 
