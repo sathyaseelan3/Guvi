@@ -1,0 +1,52 @@
+{
+  "name": "Sathyaseelan",
+  "title": "Software Engineer",
+  "contact": {
+    "email": "svseela3e@gmail.com",
+    "phone": "1234567890",
+    "address": "chennai"
+  },
+  "summary": "Experienced software engineer with a focus on full-stack web development.",
+  "skills": [
+    "JavaScript",
+    "Python",
+    "HTML/CSS",
+    "React",
+    "Node.js",
+    "SQL",
+    "Git"
+  ],
+  "experience": [
+    {
+      "position": "Senior Software Engineer",
+      "company": "ABC Tech",
+      "startDate": "2018-06",
+      "endDate": "2022-12",
+      "responsibilities": [
+        "Developed and maintained web applications using React and Node.js.",
+        "Collaborated with cross-functional teams to design and implement new features.",
+        "Performed code reviews and provided technical guidance to junior developers.",
+        "Improved application performance through optimization and refactoring."
+      ]
+    },
+    {
+      "position": "Software Engineer",
+      "company": "guvi Software",
+      "startDate": "2016-03",
+      "endDate": "2018-05",
+      "responsibilities": [
+        "Built responsive user interfaces with HTML, CSS, and JavaScript.",
+        "Implemented server-side logic using Python and Django framework.",
+        "Participated in agile development process and sprint planning.",
+        "Conducted unit testing and debugging to ensure software quality."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "university": "University of ABC",
+      "completionYear": 2016
+    }
+  ]
+}

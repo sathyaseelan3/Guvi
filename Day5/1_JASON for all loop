@@ -1,0 +1,79 @@
+//FOR LOOP
+
+const jsonObject = {
+    
+      "name": "John Doe",
+        "age": 30,
+        "email": "johndoe@example.com",
+        "address": {
+          "street": "123 Main St",
+          "city": "New York",
+          "country": "USA"
+        },
+        "hobbies": ["reading", "painting", "gardening"]
+      
+      
+};
+
+for (let key in jsonObject) {
+  console.log(key, jsonObject[key]);
+}
+
+
+//FOR IN
+const jsonObject = {
+    "name": "John Doe",
+    "age": 30,
+    "email": "johndoe@example.com",
+    "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "country": "USA"
+    },
+    "hobbies": ["reading", "painting", "gardening"]
+  };
+  
+  for (let key in jsonObject) {
+    if (jsonObject.hasOwnProperty(key)) {
+      console.log(key, jsonObject[key]);
+    }
+  }
+
+  
+
+  //FOR OF
+  const jsonObject = {
+    "name": "John Doe",
+    "age": 30,
+    "email": "johndoe@example.com",
+    "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "country": "USA"
+    },
+    "hobbies": ["reading", "painting", "gardening"]
+  };
+  
+  for (let value of Object.values(jsonObject)) {
+    console.log(value);
+  }
+
+
+  //FOR EACH
+  const jsonObject = {
+    "name": "John Doe",
+    "age": 30,
+    "email": "johndoe@example.com",
+    "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "country": "USA"
+    },
+    "hobbies": ["reading", "painting", "gardening"]
+  };
+  
+  Object.values(jsonObject).forEach((value) => {
+    console.log(value);
+  });
+  
+  
