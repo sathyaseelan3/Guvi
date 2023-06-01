@@ -1,0 +1,24 @@
+
+//anonymous function
+const rotateArray = function(arr, k) {
+  k = k % arr.length; 
+  const rotated = arr.slice(k).concat(arr.slice(0, k));
+  return rotated;
+};
+
+const array = [1, 2, 3, 4, 5];
+const k = 2;
+const rotatedArray = rotateArray(array, k);
+console.log(rotatedArray); 
+
+
+
+//IIFE
+const rotatedArray = (function(arr, k) {
+    k = k % arr.length; 
+    const rotated = arr.slice(k).concat(arr.slice(0, k));
+    return rotated;
+  })([1, 2, 3, 4, 5], 2);
+  
+  console.log(rotatedArray); 
+  

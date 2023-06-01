@@ -1,0 +1,56 @@
+//odd numbers in Anonymous Function
+
+const Num=[1, 2, 3, 4, 5, 6, 7, 8, 9,10];
+
+var oddNum=function(arr)
+{
+    for(let i=0;i<arr.length;i++)
+    {
+       if(arr[i]%2 !==0)
+       {
+         console.log(arr[i]);
+        }
+    }
+}
+oddNum(Num);
+
+
+
+
+//odd numbers in IIFE
+
+const odd=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+(function(arr)
+{
+    for(let i=0;i<arr.length;i++)
+    {
+        if(arr[i]%2 !==0)
+        {
+          console.log(arr[i]);
+        }
+
+    }
+
+})(odd)
+
+
+
+
+//odd numbers in Arrow Function
+
+const arr=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+var oddNum = (arr) =>
+{
+
+    for(let i=0;i<arr.length;i++)
+    {
+        if(arr[i]%2 !==0)
+        {
+            console.log(arr[i]);
+        }
+    }
+
+};
+oddNum(arr);

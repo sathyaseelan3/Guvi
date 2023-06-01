@@ -1,0 +1,54 @@
+
+
+// Using an arrow function
+var numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+var primes = numbers.filter(num => {
+  for (var i = 2, sqrt = Math.sqrt(num); i <= sqrt; i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return num > 1;
+});
+
+console.log(primes); 
+
+
+
+
+// Using an anonymous function
+
+var numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+var primes = numbers.filter(function(num) {
+  for (var i = 2, sqrt = Math.sqrt(num); i <= sqrt; i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return num > 1;
+});
+
+console.log(primes); 
+
+
+
+
+
+// Using an IIFE
+
+var numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+var primes = (function(arr) {
+  return arr.filter(function(num) {
+    for (var i = 2, sqrt = Math.sqrt(num); i <= sqrt; i++) {
+      if (num % i === 0) {
+        return false;
+      }
+    }
+    return num > 1;
+  });
+})(numbers);
+
+console.log(primes); 

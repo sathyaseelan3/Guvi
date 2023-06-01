@@ -1,0 +1,37 @@
+
+
+// Using an arrow function
+
+var words = ["guvi", "hello", "java", "css", "html"];
+var palindromes = words.filter(word => {
+  var reversedWord = word.split("").reverse().join("");
+  return word === reversedWord;
+});
+
+console.log(palindromes); 
+
+
+
+// Using an anonymous function
+
+var words = ["guvi", "hello", "java", "css", "html"];
+var palindromes = words.filter(function(word) {
+  var reversedWord = word.split("").reverse().join("");
+  return word === reversedWord;
+});
+
+console.log(palindromes); 
+
+
+
+// Using an IIFE
+
+var words = ["guvi", "hello", "java", "css", "html"];
+var palindromes = (function(arr) {
+  return arr.filter(function(word) {
+    var reversedWord = word.split("").reverse().join("");
+    return word === reversedWord;
+  });
+})(words);
+
+console.log(palindromes);

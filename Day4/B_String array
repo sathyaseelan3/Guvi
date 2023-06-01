@@ -1,0 +1,38 @@
+
+// Using an anonymous function
+
+var strings = ["hello", "world", "javascript", "example"];
+
+var Caps = strings.map(function(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+});
+
+console.log(Caps); 
+
+
+
+// Using an IIFE
+
+var Caps = (function(arr) {
+    return arr.map(function(str) {
+      return str.charAt(0).toUpperCase() + str.slice(1);
+    });
+  })(strings);
+  
+  console.log(Caps); 
+  
+  
+  
+  // Using an arrow function
+
+  const strings = ["hello", "world", "javascript", "example"];
+
+const Caps = strings.map(str => str.charAt(0).toUpperCase() + str.slice(1));
+
+console.log(Caps); 
+
+  
+  
+  
+
+
