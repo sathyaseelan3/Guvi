@@ -1,0 +1,35 @@
+
+h1{
+    color: rgb(51, 139, 29);
+}
+body{
+    background-color: #cad2c5;
+}
+#bbb{
+    background-color: #2f3d46 ;  
+    padding-bottom: 20px;
+    padding: 15px;
+}
+img{
+   
+    margin-top: auto;
+    margin-left: 20px;
+
+}
+#name{
+   
+    display: inline-block;
+    margin-left: 43%;
+    color: white;
+    font-size: x-large;
+}
+#sec{
+    
+  
+    height: 100vh; 
+    width: 70vh;
+ 
+}
+.leftcon{
+
+}
