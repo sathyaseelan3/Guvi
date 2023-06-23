@@ -6,8 +6,10 @@
   
 </head>
 <body>
+  <h1 id="title">Calculator</h1>
   <div class="calculator">
-    <input type="text" id="display"  readonly>
+    
+    <input type="text" id="result"  readonly>
     <br>
     <div class="button-row">
       <button onclick="PRESS('7')">7</button>
@@ -22,23 +24,25 @@
       <button onclick="PRESS('*')">*</button>
     </div>
     <div class="button-row">
-      <button onclick="PRESS('1')">1</button>
-      <button onclick="PRESS('2')">2</button>
-      <button onclick="PRESS('3')">3</button>
-      <button onclick="PRESS('-')">-</button>
+      <button id="1" onclick="PRESS('1')">1</button>
+      <button id="2" onclick="PRESS('2')">2</button>
+      <button id="3" onclick="PRESS('3')">3</button>
+      <button id="subtract" onclick="PRESS('-')">-</button>
     </div>
     <div class="button-row">
       <button onclick="PRESS('0')">0</button>
       <button onclick="PRESS('(')">(</button>
       <button onclick="PRESS(')')">)</button>
-      <button onclick="PRESS('+')">+</button>
+      <button id="add" onclick="PRESS('+')">+</button>
     </div>
     <div class="button-row">
-      <button id="calculate" onclick="performCalculation()">Calculate</button>
-      <button id="clear" onclick="clearDisplay()">Clear</button>
+      <button id="equal" onclick="performCalculation()">Calculate</button>
+      <button id="clear" onclick="clearresult()">Clear</button>
     </div>
+    <p id="description">*This is Simple Calculator</p>
   </div>
 
   <script src="script.js"></script>
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
 </body>
 </html>
