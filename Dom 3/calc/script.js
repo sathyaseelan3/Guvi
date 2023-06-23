@@ -1,11 +1,11 @@
 function PRESS(value) {
-  var display = document.getElementById("display");
-  display.value += value;
+  var result = document.getElementById("result");
+  result.value += value;
 }
 
 function performCalculation() {
-  var display = document.getElementById("display");
-  var expression = display.value;
+  var result = document.getElementById("result");
+  var expression = result.value;
 
   var regex = /^[\d+\-*/().]+$/;
   if (!regex.test(expression)) {
@@ -15,16 +15,16 @@ function performCalculation() {
 
   
   try {
-    var result = eval(expression);
-    var truncatedResult = result.toFixed(4); 
-    display.value = truncatedResult;
+    var resultInput = eval(expression);
+    var truncatedResult = resultInput.toFixed(0); 
+    result.value = truncatedResult;
   } catch (error) {
     alert("Invalid expression!");
   }
 }
 
 
-function clearDisplay() {
-  var display = document.getElementById("display");
-  display.value = "";
+function clearresult() {
+  var result = document.getElementById("result");
+  result.value = "";
 }
