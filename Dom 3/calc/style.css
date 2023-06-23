@@ -13,7 +13,7 @@
     border-radius: .5cm;
 }
 
-#display {
+#result {
     width: 6.6cm;
     margin-top: 0.3cm;
     margin-left: 0.19cm;
@@ -60,7 +60,7 @@ button{
 
 
  
-  #calculate {
+  #equal {
     width: 100%;
     margin-top: 10px;
     padding: 10px;
@@ -87,7 +87,7 @@ button{
       margin: 5vh auto;
     }
   
-    #display {
+    #result {
       width: 85%;
       margin-left: 0.3cm;
     }
@@ -96,8 +96,26 @@ button{
       width: 25%;
     }
   
-    #calculate,
+    #equal,
     #clear {
       width: 50%;
     }
+  }
+  #title{
+    color: white;
+    margin-left: 10cm;
+    margin-top: 2cm;
+  }
+  #description{
+    background-color: whitesmoke;
+    color: red;
+    font-size: small;
+    margin-left: 0.4cm;
+  }
+  #add{
+    color: #ff3333;
+  }
+  #subtract{
+    color: #ff3333;
+    
   }
