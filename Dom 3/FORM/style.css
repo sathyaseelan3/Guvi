@@ -1,3 +1,4 @@
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -9,8 +10,9 @@ table {
     border-bottom: 1px solid #ddd;
   }
 
-  form {
+  #form {
     width: 400px;
+    margin-left: 30%;
   }
 
   label {
@@ -36,4 +38,26 @@ table {
 
   .error {
     color: red;
+  }
+  #title{
+    margin-left: 3cm;
+  }
+  #description{
+    color: red;
+    margin-left: 29%;
+  }
+  #first-name{
+    background-color: white;
+    border-width: 1px;
+  }
+  #form-group{
+    background-color: white;
+  }
+  #male {
+    margin-left: 0.5cm;
+    
+  }
+  #address{
+    width: 10.7cm;
+    height: 2cm;
   }
