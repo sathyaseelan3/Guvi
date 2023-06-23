@@ -1,0 +1,39 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  form {
+    width: 400px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"], select, input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+
+  .success {
+    color: green;
+  }
+
+  .error {
+    color: red;
+  }
