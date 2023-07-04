@@ -1,0 +1,9 @@
+*{
+    background-color: black;
+}
+#count{
+    margin-top: 40vh;
+    margin-left: 32%;
+    font-size: xxx-large;
+    color: rgb(255, 255, 255);
+}
