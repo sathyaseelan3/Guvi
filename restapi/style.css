@@ -1,0 +1,39 @@
+*{
+    background-color: #1b333c;
+    color: white;
+    
+}
+
+.flag {
+    max-width: 100%;
+    height: auto;
+}
+#cont{
+    background-color: #1b333c;
+    
+}
+.card-header{
+    background-color: black;
+}
+.card-body{
+    background-color: #a6a087;
+}
+p{
+    background-color: #a6a087; 
+}
+#head{
+    background-color: #1b333c;
+    margin-top: 1cm;
+    padding-bottom: 1cm;
+}
+#title{
+    background-color: #1b333c;
+    margin-left: 2cm;
+}
+.card-text{
+    background-color: #a6a087;
+    margin-top: .5cm;
+}
+img{
+    color: #1b333c;
+}
